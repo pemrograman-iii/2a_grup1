@@ -1,0 +1,3 @@
+nama,kerjaan,bulan
+John Smith,Accounting,November
+Erica Meyers,IT,March
