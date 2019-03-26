@@ -1,0 +1,290 @@
+%%%%%%%%%%%%%%
+%% Run LaTeX on this file several times to get Table of Contents,
+%% cross-references, and citations.
+
+%% If you have font problems, you may edit the w-bookps.sty file
+%% to customize the font names to match those on your system.
+
+%% w-bksamp.tex. Current Version: Feb 16, 2012
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Sample file for
+%  Wiley Book Style, Design No.: SD 001B, 7x10
+%  Wiley Book Style, Design No.: SD 004B, 6x9
+%
+%
+%  Prepared by Amy Hendrickson, TeXnology Inc.
+%  http://www.texnology.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%
+% 7x10
+%\documentclass{wileySev}
+
+% 6x9
+\documentclass{wileySix}
+
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=sh
+}
+
+\lstset{style=mystyle}
+
+%%%%%%%
+%% for times math: However, this package disables bold math (!)
+%% \mathbf{x} will still work, but you will not have bold math
+%% in section heads or chapter titles. If you don't use math
+%% in those environments, mathptmx might be a good choice.
+
+% \usepackage{mathptmx}
+
+% For PostScript text
+\usepackage{w-bookps}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other packages you might want to use:
+
+% for chapter bibliography made with BibTeX
+% \usepackage{chapterbib}
+
+% for multiple indices
+% \usepackage{multind}
+
+% for answers to problems
+% \usepackage{answers}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change options here if you want:
+%%
+%% How many levels of section head would you like numbered?
+%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection
+%%==>>
+\setcounter{secnumdepth}{3}
+
+%% How many levels of section head would you like to appear in the
+%% Table of Contents?
+%% 0= chapter titles, 1= section titles, 2= subsection titles,
+%% 3= subsubsection titles.
+%%==>>
+\setcounter{tocdepth}{2}
+
+%% Cropmarks? good for final page makeup
+%% \docropmarks
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% DRAFT
+%
+% Uncomment to get double spacing between lines, current date and time
+% printed at bottom of page.
+% \draft
+% (If you want to keep tables from becoming double spaced also uncomment
+% this):
+% \renewcommand{\arraystretch}{0.6}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Demo of section head containing sample macro:
+%% To get a macro to expand correctly in a section head, with upper and
+%% lower case math, put the definition and set the box
+%% before \begin{document}, so that when it appears in the
+%% table of contents it will also work:
+
+\newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
+
+%% use a box to expand the macro before we put it into the section head:
+
+\newbox\sectsavebox
+\setbox\sectsavebox=\hbox{\boldmath\VT{xyz}}
+
+%%%%%%%%%%%%%%%%% End Demo
+
+
+\begin{document}
+
+
+\booktitle{Cerdas Menguasai Python}
+\subtitle{Dalam 24 Jam}
+
+\authors{Rolly M. Awangga\\
+\affil{Informatics Research Center}
+%Floyd J. Fowler, Jr.\\
+%\affil{University of New Mexico}
+}
+
+\offprintinfo{Cerdas Menguasai Python, First Edition}{Rolly M. Awangga}
+
+%% Can use \\ if title, and edition are too wide, ie,
+%% \offprintinfo{Survey Methodology,\\ Second Edition}{Robert M. Groves}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\halftitlepage
+
+%\titlepage
+
+
+\begin{copyrightpage}{2019}
+\input{info/copyrightpage}
+\end{copyrightpage}
+
+\dedication{`Jika Kamu tidak dapat menahan lelahnya belajar,
+Maka kamu harus sanggup menahan perihnya Kebodohan.'
+~Imam Syafi'i~}
+
+\begin{contributors}
+\input{info/contributors}
+\end{contributors}
+
+\contentsinbrief
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+
+
+\begin{foreword}
+\input{info/foreword}
+\end{foreword}
+
+\begin{preface}
+\input{info/preface}
+\end{preface}
+
+
+\begin{acknowledgments}
+\input{info/acknowledgments}
+\end{acknowledgments}
+
+\begin{acronyms}
+\input{info/acronyms}
+\end{acronyms}
+
+\begin{glossary}
+\input{info/glossary}
+\end{glossary}
+
+\begin{symbols}
+\input{info/symbols}
+\end{symbols}
+
+\begin{introduction}
+\input{info/introduction}
+\end{introduction}
+
+%%%%%%%%%%%%%%%%%%Isi Buku_
+%TEORI
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Teori/1}
+%PRAKTEK
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Praktek/1}
+
+%TEORI
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Teori/2}
+%PRAKTEK
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Praktek/2}
+
+%TEORI
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Teori/3}
+%PRAKTEK
+%\chapter{Judul Bagian Pertama}
+%\input{chapters/Praktek/3}
+
+%TEORI
+\chapter{Library CSV dan Pandas}
+\input{chapters/Teori/4}
+%PRAKTEK
+\chapter{Praktek Library CSV dan Pandas}
+\input{chapters/Praktek/4}
+
+\bibliographystyle{IEEEtran}
+%\def\bibfont{\normalsize}
+\bibliography{references}
+
+
+%%%%%%%%%%%%%%%
+%%  The default LaTeX Index
+%%  Don't need to add any commands before \begin{document}
+\printindex
+
+%%%% Making an index
+%%
+%% 1. Make index entries, don't leave any spaces so that they
+%% will be sorted correctly.
+%%
+%% \index{term}
+%% \index{term!subterm}
+%% \index{term!subterm!subsubterm}
+%%
+%% 2. Run LaTeX several times to produce <filename>.idx
+%%
+%% 3. On command line, type  makeindx <filename> which
+%% will produce <filename>.ind
+%%
+%% 4. Type \printindex to make the index appear in your book.
+%%
+%% 5. If you would like to edit <filename>.ind
+%% you may do so. See docs.pdf for more information.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%% Making Multiple Indices %%%%%%%%%%%%%%%%
+%% 1.
+%% \usepackage{multind}
+%% \makeindex{book}
+%% \makeindex{authors}
+%% \begin{document}
+%%
+%% 2.
+%% % add index terms to your book, ie,
+%% \index{book}{A term to go to the topic index}
+%% \index{authors}{Put this author in the author index}
+%%
+%% \index{book}{Cows}
+%% \index{book}{Cows!Jersey}
+%% \index{book}{Cows!Jersey!Brown}
+%%
+%% \index{author}{Douglas Adams}
+%% \index{author}{Boethius}
+%% \index{author}{Mark Twain}
+%%
+%% 3. On command line type
+%% makeindex topic
+%% makeindex authors
+%%
+%% 4.
+%% this is a Wiley command to make the indices print:
+%% \multiprintindex{book}{Topic index}
+%% \multiprintindex{authors}{Author index}
+
+\end{document}
+
