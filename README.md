@@ -1,2 +1,11 @@
 # 2a_group1
-Syarah F. Ulya
+Mentor : Syarah F. Ulya
+
+Anggota :
+- Arjun Yuda Firwanda
+- Dwi Yulianingsih
+- Harun Ar-Rasyid
+- Rahmatul Ridha
+- Sri Rahayu
+- Tomy Prawoto
+- Doli Jonviter
