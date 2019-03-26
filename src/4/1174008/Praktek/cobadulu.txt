@@ -1,0 +1,3 @@
+name,department,birthday month
+Jack Miller,Accounting,Desember
+Erica Meyers,IT,March
