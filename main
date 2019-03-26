@@ -1,0 +1,12 @@
+
+Created on 
+@author: sri
+"""
+
+import d1174009_csv
+d1174015_csv.bacacsvlist()
+d1174015_csv.nulis()
+
+import d1174009_pandas
+d1174015_pandas.bacalistpandas()
+d1174015_pandas.write() 
