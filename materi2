@@ -1,0 +1,23 @@
+
+\section{Muhammad Alif Firnando}
+\subsection{Soal 1}
+<<<<<<< HEAD
+\begin{enumerate}
+=======
+\begin{itemize}
+>>>>>>> 90bd49ff5d5a43fd7d48e2be9b06b8c38086a66e
+\item Berikut adalah pemanggilan file csv dengan library csv yang menggunakan list
+\lstinputlisting[firstline=10, lastline=20]{src/4/1154016/Chapter4/c_1154015_csv.py}
+
+@@ -159,8 +163,12 @@ \subsection{Soal 1}
+
+\item berikut merupakan penggunaan untuk merename atribut yang digunakan, atau merubah nama header 0
+\lstinputlisting[firstline=26, lastline=30]{src/4/1154016/Chapter4/p_1154015_pandas.py}
+<<<<<<< HEAD
+\end{enumerate}
+
+=======
+\end{itemize}
+>>>>>>> 90bd49ff5d5a43fd7d48e2be9b06b8c38086a66e
+\subsection{Soal 8}
+\lstinputlisting[firstline=8, lastline=10]{src/4/1154015/Chapter4/jonviter.py}
