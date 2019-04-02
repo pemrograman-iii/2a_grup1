@@ -1,8 +1,9 @@
 \section{Harun Ar - Rasyid}
-\subsection{Apa itu fungsi device manager di windows dan folder /dev di linux}
+\subsection{Teori}
+\subsubsection{Apa itu fungsi device manager di windows dan folder /dev di linux}
 Fungsi device manager dan folder /dev itu berfungsi untuk mengetahui device apa saja yang telah terinstal di leptop anda serta mengetahui port yang digunakan oleh device tersebut.
 
-\subsection{Jelaskan langkah-langkah instalasi driver dari arduino}
+\subsubsection{Jelaskan langkah-langkah instalasi driver dari arduino}
 \begin{enumerate}
     \item Cara Auto
     \begin{itemize}
@@ -90,10 +91,10 @@ Fungsi device manager dan folder /dev itu berfungsi untuk mengetahui device apa 
         \end{figure}
         \end{itemize}
 \end{enumerate}
-\subsection{Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver}
+\subsubsection{Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver}
 Untuk baudrate itu bisa dicek melalui arduino IDE, kemudian untuk mengecheck port bisa dilakukan dengan device manager
 
-\subsection{Jelaskan sejarah library pyserial}
+\subsubsection{Jelaskan sejarah library pyserial}
 Modul ini merangkum akses untuk port serial. Ini menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
 Akses ke pengaturan port melalui properti Python.
 Dukungan untuk berbagai ukuran byte, bit stop, paritas dan kontrol aliran dengan RTS / CTS dan / atau Xon / Xoff.
@@ -103,18 +104,35 @@ File-file dalam paket ini adalah 100 persen Python murni.
 Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.) Ini membuat modul ini bermanfaat secara universal.
 Kompatibel dengan pustaka io (Python 2.6+)
 
-\subsection{Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial}
+\subsubsection{Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial}
+
+
 Serial – fungsi ini untuk membuka port serial
 Write(data) – untuk menulis data lewat port serial
 Readline() – untuk membaca string dari port serial
 Read(size) – untuk membaca jumlah byte dari port serial
 Close() – ini untuk menutup port serial 
 
-\subsection{Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial}
+\subsubsection{Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial}
+
+
 Perualangan dalam bahasa pemrograman berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
 Perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaannya adalah perulangan for biasanya digunakan untuk mengulangi kode yang sudah diketahui banyak perulangannya. Sementara while untuk perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
 Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu.  Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
 
-\subsection{Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial}
+\subsubsection{Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial}
+
+
 Berikut merupakan contoh penggunaan fungsi yang menggunakan pyserial
 \lstinputlisting[firstline=8, lastline=15]{src/5/1174027/teori/T1174027.py}
+
+\subsubsection{Scan Plagiarisme}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/5/1174027/teori/nopla.png}
+    \centering
+    \caption{Membuat file csv}
+\end{figure}
+
+\subsection{Praktek}
+\subsubsection{Kerjakan soal berikut ini, ....}
+\subsubsection{Penanganan Error}
