@@ -1,0 +1,24 @@
+@@ -68,5 +68,21 @@ \subsubsection{Bukti bebas plagiarisme}
+\end{figure}
+
+\subsection{Praktek}
+\subsubsection{Kerjakan soal berikut ini, ....}
+\subsubsection{Penanganan Error}
+\begin{enumerate}
+\item Soal 1
+\lstinputlisting[firstline=8, lastline=14]{src/5/1174015/1174015_realtime.py}
+
+\item Soal 2
+\lstinputlisting[firstline=8, lastline=15]{src/5/1174015/1174015_save.py}
+
+\item Soal 3
+\lstinputlisting[firstline=16, lastline=29]{src/5/1174015/1174015_realtime.py}
+
+\item Soal 4
+\lstinputlisting[firstline=8, lastline=16]{src/5/1174015/1174015_csv.py}
+
+\end{enumerate}
+
+\subsubsection{Penanganan Error}
+cara untuk menangani eror yang dapat dilakukan adalah sebagai berikut:
+\lstinputlisting[firstline=8, lastline=17]{src/5/1174015/1174015_eror.py}
