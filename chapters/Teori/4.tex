@@ -318,10 +318,149 @@ Berikut adalah cek plagiarisme pada teorinya pada \ref{Plagiarisme}
 \subsection{Soal 1}
 Isi jawaban soal ke-1
 
-Kalau mau dibikin paragrap \textbf{cukup enter aja}, tidak usah pakai \verb|par| dsb
+\begin{enumerate}
+ \item Apa itu fungsi file csv, jelaskan sejarah dan contohnya.
+   \begin{itemize}
+    \item Apa itu Fungsi file csv
 
-%\subsection{Soal 2}
-%Isi jawaban soal ke-2
+     Format file csv \textit{Comma Separated Values} yaitu suatu format data pada basis data dimana setiap record yang dapat dipisahkan dengan menggunakan tanda koma (`,’) atau juga bisa dengan menggunakan titik koma (`;’) sebagai tanda pemisah antara datu elemen dengan elemen yang lainnya. Selain bahasa programnya yang sederhana, format ini juga dapat dibuka dengan menggunakan berbagai \textit{text-editor} seperti Notepad, Wordpad, dan MS Excel.
 
-%\subsection{Soal 3}
-%Isi jawaban soal ke-3
+     File CSV (nilai berbatas koma) merupakan tipa file khusus yang dapat dibuat atau diedit dengan menggunakan excel. File csv menyimpan informasi yang dapat dipisah oleh koma (,), bukan untuk menyimpan informasi dalam kolom. Saat teks dan angka yang disimpan dalam file csv, dapat memudahkan untuk memindahkannya dari satu program ke program yang lainnya.
+
+    \item Sejarah CSV
+
+     Nilai yang dipisahkan oleh koma adalah format data yang memberi tanggal lebih awal pada komputer pribadi lebih dari satu dekade: kompiler IBM Fortran (level H extended) di bawah OS / 360 mendukungnya pada tahun 1972. Input / output yang diarahkan oleh daftar ("bentuk bebas") didefinisikan dalam FORTRAN 77, disetujui pada tahun 1978. Input yang diarahkan daftar menggunakan koma atau spasi untuk pembatas, sehingga string karakter yang tidak dikutip tidak dapat mengandung koma atau spasi.
+
+     Nama "nilai yang dipisahkan koma" dan singkatan "CSV" digunakan pada tahun 1983. Manual untuk komputer Osborne Executive, yang menggabungkan SuperCalc spreadsheet, mendokumentasikan konvensi kutipan CSV yang memungkinkan string berisi koma yang disematkan, tetapi manual tersebut tidak menentukan konvensi untuk menyematkan tanda kutip dalam string yang dikutip. Daftar nilai yang dipisahkan koma lebih mudah untuk diketik (misalnya ke dalam kartu berlubang) daripada data yang selaras dengan kolom tetap dan cenderung menghasilkan hasil yang salah jika suatu nilai dilubangi satu kolom dari lokasi yang dituju.
+
+     Pada 2014 IETF menerbitkan RFC7111 yang menjelaskan aplikasi fragmen URI ke dokumen CSV. RFC7111 menentukan bagaimana rentang baris, kolom, dan sel dapat dipilih dari dokumen CSV menggunakan indeks posisi. Pada 2015 W3C, dalam upaya meningkatkan CSV dengan semantik formal, mempublikasikan draft rekomendasi pertama untuk standar metadata CSV, yang dimulai sebagai rekomendasi pada bulan Desember tahun yang sama.
+
+     \item Contohnya
+
+       \lstinputlisting[caption = Contoh penggunaan format CSV., firstline=1, lastline=3]{src/4/1154121/Chapter4/teori.csv}
+     \end{itemize}
+
+ \item Aplikasi-aplikasi apa saja yang bisa menciptakan file csv ?
+
+       \begin{itemize}
+         \item Text editor (Notepat, Wordpad, dan lain-lain)
+         \item Spreadsheet (Microsoft Excel)
+       \end{itemize}
+
+ \item Jelaskan bagaimana cara menulis dan membaca file csv diexcel atau spreadsheet.
+
+    \textbf{Menulis File CSV}
+       \begin{enumerate}
+	   \item Buat dokumen baru diexcel.
+       \item Tambahkan judul kolom untuk setiap potongan informasi yang ingin dicatat, contohnya npm, nama, kelas. Lalu ketikkn informasi delam kolom yang sesuai.
+	   \item Setelah selesai dibuat, file excel yang telah dibuat akan terlihat seperti \ref{CSV}
+		
+		\begin{figure}[H]	\includegraphics[width=5cm]{figures/4/1154121/1.png}
+		\centering
+        \caption{Membuat file csv}
+        \label{CSV}
+		\end{figure}
+		
+	   \item Kemudian isi kolom `File name' dengan nama file anda dan kolom `Save as type' pilih yang berekstensi .csv \ref{save}.
+		\begin{figure}[H] \includegraphics[width=5cm]{figures/4/1154121/2.png}
+			\centering
+        \caption{Save as Type}
+        \label{save}
+		\end{figure}
+
+\item Kemudian file yang Anda telah terbuat tadi tersimpan dengan ekstensi .csv. Untuk melihat isi filenya tinggal klik dua kali pada file tersebut \ref{ekstensi}.
+
+		\begin{figure}[H]	\includegraphics[width=5cm]{figures/4/1154121/3.png}
+			\centering
+        \caption{Perintah ekstensi}
+        \label{ekstensi}
+		\end{figure}
+		
+	   \item Lalu tinggal klik `Yes'\ref{lokasipenyimpanan}.
+	
+		\begin{figure}[H] \includegraphics[width=5cm]{figures/4/1154121/4.png}
+		\centering
+		\caption{Konfirmasi Penyimpanan}
+        \label{lokasipenyimpanan}
+        \end{figure}
+        \end{enumerate}
+
+   \textbf{Melihat File CSV di Excel atau Spreadsheet}
+
+	 \begin{enumerate}
+		\item Pertama klik dua kali pada file yang yang berekstensi CSV\ref{filecsv}.
+		
+		\begin{figure}[H]	\includegraphics[width=5cm]{figures/4/1154121/5.png}
+		\centering
+		\caption{file csv yang telah disave}
+        \label{filecsv}
+        \end{figure}
+		
+		\item Kemudian file akan terbuka secara otomatis di aplikasi Excel atau spreadsheet\ref{filecsv1}.
+		
+		\begin{figure}[H] \includegraphics[width=5cm]{figures/4/1154121/6.png}
+		\centering
+        \caption{file csv pada Excel}
+        \label{filecsv1}
+		\end{figure}
+	 \end{enumerate}
+
+   \item Jelaskan sejarah library csv.
+
+   Format yang disebut CSV \textit{Comma Separated Values} adalah format impor dan ekspor paling umum untuk spreadsheet dan basis data. Format CSV digunakan selama bertahun-tahun sebelum upaya untuk menggambarkan format dengan cara standar di RFC 4180. Kurangnya standar yang didefinisikan dengan baik berarti bahwa perbedaan halus sering ada dalam data yang diproduksi dan dikonsumsi oleh aplikasi yang berbeda. Perbedaan-perbedaan ini dapat membuatnya menjengkelkan untuk memproses file CSV dari berbagai sumber.
+
+   Namun, sementara pembatas dan mengutip karakter bervariasi, format keseluruhan cukup mirip sehingga dimungkinkan untuk menulis satu modul yang dapat secara efisien memanipulasi data seperti itu, menyembunyikan detail membaca dan menulis data dari programmer. Modul csv mengimplementasikan kelas untuk membaca dan menulis data tabular dalam format CSV.
+
+   Hal ini memungkinkan programmer untuk mengatakan, "tulis data ini dalam format yang disukai oleh Excel," atau "baca data dari file ini yang dihasilkan oleh Excel," tanpa mengetahui detail yang tepat dari format CSV yang digunakan oleh Excel. Pemrogram juga dapat menggambarkan format CSV yang dipahami oleh aplikasi lain atau menentukan format CSV tujuan khusus mereka sendiri.
+
+   \item Jelaskan sejarah library Pandas.
+   
+   Pandas merupakan toolkit yang powerfull sebagai alat untuk analisis data dan struktur pada bahasa pemrograman Python. Dengan menggunakan pandas kita dapat mengolah data dengan mudah, salah satunya yaitu fiturnya adalah Dataframe. Dengan adanya fitur dataframe kita dapat membaca sebuah file dan menjadikannya tabel, kita juga dapat mengolah suatu data dengan menggunakan operasi seperti join, distinct, group by, agregasi, dan teknik lainnya yang terdapat pada SQL. Saat ini banyak format file yang dapat dibaca menggunakan Pandas, seperti file .txt, .csv, .tsv dan lainnya.
+
+   \item Jelaskan fungsi-fungsi yang terdapat dilibrary csv.
+
+       \begin{enumerate}
+		\item reader
+		
+		Fungsi ini digunakan untuk membaca isi file berformat CSV dari list.
+		
+		\lstinputlisting[caption = Membaca file berformat CSV list., firstline=7, lastline=13]{src/4/1154121/Chapter4/1154121.py}
+		
+		\item DictReader
+		
+		Fungsi ini digunakan untuk membaca isi file berformat CSV dari dictionary.
+		
+		\lstinputlisting[caption =  Membaca file berformat CSV dictionary., firstline=15, lastline=21]{src/4/1154121/Chapter4/1154121.py}
+		
+		\item write
+		
+		Fungsi ini digunakan untuk menulis file berformat CSV dari list.
+		
+		\lstinputlisting[caption =  Menulis file berformat CSV list., firstline=23, lastline=30]{src/4/1154121/Chapter4/1154121.py}
+		
+		\item DictWrite
+		
+		Fungsi ini digunakan untuk menulis file berformat CSV dari dictionary.
+		
+		\lstinputlisting[caption =  Menulis file berformat CSV dictionary., firstline=32, lastline=41]{src/4/1154121/Chapter4/1154121.py}
+		
+	\end{enumerate}
+
+   \item Jelaskan fungsi-fungsi yang terdapat di library pandas.
+
+       \begin{enumerate}
+		\item read\_csv
+		
+		Fungsi ini digunakan untuk membaca isi file berformat CSV
+		
+		\lstinputlisting[caption =  Membaca file berformat CSV pandas., firstline=43, lastline=47]{src/4/1154121/Chapter4/1154121.py}
+		
+		\item to\_csv
+		
+		Fungsi ini digunakan untuk menulis file berformat CSV
+		
+		\lstinputlisting[caption =  Menulis file berformat CSV pandas., firstline=49, lastline=53]{src/4/1154121/Chapter4/1154121.py}
+		
+	\end{enumerate}
+ \end{enumerate}
+
