@@ -1,0 +1,96 @@
+\section{Harun Ar - Rasyid}
+\subsection{Teori}
+\subsubsection{Apa itu fungsi library matplotlib}
+\hfill \break
+Matplotlib adalah sebuah library pada python yang digunakan untuk membuat diagram. Library ini biasanya menghasilkan ploting 2D.
+\subsubsection{Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib}
+\hfill \break
+ntuk membuat sumbu x dan y kita bisa membuatnya menggunakan list untuk mempermudah penyimpanan nilai setiap sumbunya.
+Untuk contoh pembuatannya bisa dilihat sebagai berikut
+\lstinputlisting[firstline=9, lastline=10]{src/6/1174027/teori/T1174027.py}
+\subsubsection{Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib}
+\hfill \break
+Untuk perbedaan fungsi plot yang digunakan adalah bentuk bentuk grafik yang akan di tampilkan sesuai dengan perintah yang digunakan pada pemogramannya.
+Dan untuk cara pengguna plot tersebut sebagai berikut
+\begin{itemize}
+    \item line
+    Perintah yang digunakan untuk membuat grafik line sebagai berikut.
+    \lstinputlisting[firstline=12, lastline=14]{src/6/1174027/teori/T1174027.py}
+    \item bar
+    Dalam Penggunaan plot bar koordinat x nya itu yang awal, dan untuk Y nya adalah yang kedua
+    \lstinputlisting[firstline=16, lastline=25]{src/6/1174027/teori/T1174027.py}
+    \item histogram
+    Dalam penggunaan plot histogram titik x nya bisa tidak sama dengan titik Y.
+    untuk penggunaannya bisa sebagai berikut.
+    \lstinputlisting[firstline=27, lastline=34]{src/6/1174027/teori/T1174027.py}
+    \item scatter
+    Untuk penggunaa plot scatter atau bisa juga d bilang diagram titik.
+    Contoh dari penggunaannya bisa dilihat sebagai berikut.
+    \lstinputlisting[firstline=36, lastline=49]{src/6/1174027/teori/T1174027.py}
+    \item Stack plot
+    Untuk penggunaan stack plot ini seperti diagram line, tapi ada fill colornya,jadi antar line itu bisa berdekatan.
+    Berikut Contoh penggunaannya
+    \lstinputlisting[firstline=82, lastline=92]{src/6/1174027/teori/T1174027.py}
+\end{itemize}
+\subsubsection{Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut}
+\hfill \break
+Untuk menggunakan legend dan label bisa di lihat dibawah ini
+\lstinputlisting[firstline=20, lastline=22]{src/6/1174027/teori/T1174027.py}
+penggunaan legend itu untuk mempermudahkita dalam membaca grafik, legend itu sendiri berisi info info dari grafik yang ada seperti nama, kemudian bentuk dan warna.
+kemudian untuk label itu sendiri digunakan untuk membedakan nama titik X dan titik Y.
+\subsubsection{Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya}
+\hfill \break
+fungsi dari subplot dari matplotlib untuk bisa membuat lebih dari 1 grafik dalam sebuah program.
+untuk cara kerjanya sendiri bisa d cek sebagai berikut
+\lstinputlisting[firstline=94, lastline=104]{src/6/1174027/teori/T1174027.py}
+untuk parameternya sendiri saya menggunakan x dan y x sebagai koordinat x dan y sebagai koordinat y.
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174027/teori/chart.png}
+    \centering
+    \caption{SubPlot}
+\end{figure}
+\subsubsection{Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)}
+\hfill \break
+Untuk parameter color yang bisa digunakan terdiri dari 2 type warna.
+\begin{enumerate}
+    \item Tipe Warna RGB
+    Untuk keterangannya sebagai berikut
+    R untuk warna Red atau Merah
+    G untuk warna Green atau Hijau
+    B untuk warna Blue atau Biru
+    \item Tipe warna CMYK
+    Untuk keterangannya sebagai berikut
+    C untuk warna Cyan atau Biru Muda
+    M untuk warna Mangenta atau Merah Tua
+    Y untuk warna Yellow Atau Kuning
+    K untuk warna blacK atau Hitam
+\end{enumerate}
+\subsubsection{Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri}
+\hfill \break
+Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x nya ada 10 nilai sedangkan Y nya ada 5 nilai, itu tidak akan jadi masalah karena diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.
+Ini merupakan contoh dari penggunaan histogram
+\lstinputlisting[firstline=27, lastline=34]{src/6/1174027/teori/T1174027.py}
+dan ini merupakan grafik histogram tersebut.
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174027/teori/histogram.png}
+    \centering
+    \caption{Diagram Histogram}
+\end{figure}
+\subsubsection{Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct}
+\hfill \break
+Berikut penjelasan tentang parameter yang ada dalam pie chart
+\begin{itemize}
+    \item label
+    Label digunakan untuk mempermudah pembaca dalam membaca diagram pie
+    \item color
+    warna digunakan untuk membedakan antar data
+    \item startangle
+    Digunakan untuk sudut yang digunakan untuk memulai diagram pie tersebut
+    \item shadow
+    bayangan digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol
+    \item explode
+    explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol
+    \item autopct
+    Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
+\end{itemize}
+\subsection{Praktek}
