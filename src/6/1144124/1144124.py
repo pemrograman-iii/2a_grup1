@@ -85,7 +85,7 @@ kuliner =[7,8,6,11,7]
 kuliah = [2,3,4,3,7]
 bioskop =[7,8,7,2,4]
 nongkrong = [2,5,3,4,6]
-potong = [7,2,2,12]
+potong = [7,8,2,12]
 kegiatan = ['Kuliner','Kuliah','Bioskop','Nongkrong']
 kolom = ['c','m','y','g']
  
@@ -116,13 +116,13 @@ plt.show()
 
 from matplotlib import pyplot as plt
 
-x = [2014,2015,2016,2017,2018,2019]
-y = [76,87,105,122,148,170]
-x2 = [2014,2015,2016,2017,2018,2019]
-y2 = [78,97,114,134,146,167]
-plt.plot(x,y,'b',label='Team Captain America', linewidth=1)
-plt.plot(x2,y2,'r',label='Team Iron Man',linewidth=1)
-plt.title('Civil Wars')
+x = [2015,2016,2017,2018,2019]
+y = [76,87,105,122,148]
+x2 = [2015,2016,2017,2018,2019]
+y2 = [78,97,114,134,146]
+plt.plot(x,y,'r',label='Team Iron Man', linewidth=1)
+plt.plot(x2,y2,'g',label='Team Aquaman',linewidth=1)
+plt.title('Marvel')
 plt.ylabel('Jumlah Pendukung')
 plt.xlabel('Tahun')
 plt.legend()
