@@ -8,7 +8,7 @@ Created on Tue Apr  2 15:59:03 2019
 import serial
 
 def baca():
-    ser = serial.Serial("COM6",115200)
+    ser = serial.Serial("COM6",19200)
     baca = ser.readline()
     print(baca)
 
