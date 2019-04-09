@@ -1,0 +1,13 @@
+
+@author: sri
+"""
+
+import p1174015_bar as bar
+import p1174015_titik as sct
+import p1174015_pie as pie
+import p1174015_plot as plt
+
+bar.balok()
+sct.sebaran()
+pie.pie_chart()
+plt.plot() 
