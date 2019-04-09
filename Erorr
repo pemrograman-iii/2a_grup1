@@ -1,0 +1,13 @@
+
+
+
+@author: Sri
+"""
+
+def tryExceptError():
+    try:
+        from p1174015_titik import batang as bar
+    except SyntaxError:
+        print("Nah Loh kan erorr ayo benarin")
+
+tryExceptError() 
