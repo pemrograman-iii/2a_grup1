@@ -7,7 +7,7 @@ Created on Tue Apr  9 16:44:45 2019
 
 from matplotlib import pyplot as plt
 
-print(1174027%3+2)
+print(1174009%3+2)
 
 def balok():
     x = [1,3,5,7,9,11,13]
